@@ -7,10 +7,11 @@ class Prodotti {
     private $immagini;
     private $prezzo;
 
-function __construct($_nomeProdotto, $_categoriaProdotto, $_prezzo ) {
+function __construct($_nomeProdotto, $_categoriaProdotto, $_immagini, $_prezzo ) {
 
         $this->setNomeProdotto($_nomeProdotto);
         $this->setCategoriaProdotto($_categoriaProdotto);
+        $this->setImmagini($_immagini);
         $this->setPrezzo($_prezzo);
 }
 
