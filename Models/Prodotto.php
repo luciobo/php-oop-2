@@ -7,7 +7,8 @@ class Prodotto {
     protected $immagini;
     protected $prezzo;
 
-function __construct($_nomeProdotto, $_categoriaProdotto, $_immagini, $_prezzo,) {
+
+function __construct($_nomeProdotto, $_categoriaProdotto, $_immagini, $_prezzo, Categoria $categoriaProdotto) {
 
         $this->setNomeProdotto($_nomeProdotto);
         $this->setCategoriaProdotto($_categoriaProdotto);

@@ -5,11 +5,12 @@ require_once "./Models/Categoria.php";
 require_once "./Models/Cibo.php";
 require_once "./Models/Gioco.php";
 
+$CategoriaGatto = new Categoria("Gatto", "fa-cat" );
+$CategoriaCane = new Categoria("Gatto", "fa-dog" );
+var_dump($CategoriaGatto, $CategoriaCane);
 
 
-$mieiProdotti = new Prodotto("cuccia per cani", "cuccie", "url" , "40",) ;
-
-
+$mieiProdotti = new Prodotto("cuccia per cani", "cuccie", "url" , "40", $CategoriaGatto) ;
 var_dump($mieiProdotti);
 
 ?>

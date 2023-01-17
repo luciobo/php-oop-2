@@ -3,7 +3,7 @@
 
 class Categoria {
     protected $nomeCategoria;
-    protected $icona;
+    protected $icona = "fa-layer-group";
 
 
     function __construct($_nomeCategoria, $_icona = null) {
@@ -57,6 +57,10 @@ class Categoria {
         $this->icona = $icona;
 
         return $this;
+    }
+
+    public function getIconHTML() {
+        return "<i class='fas $this->icona' />";
     }
 }
 
