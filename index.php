@@ -1,9 +1,13 @@
 <?php 
 
-require_once "./classes/Prodotti.php";
-require_once "./classes/Cetegoria.php";
+require_once "./Models/Prodotto.php";
+require_once "./Models/Categoria.php";
+require_once "./Models/Cibo.php";
+require_once "./Models/Gioco.php";
 
-$mieiProdotti = new Prodotti("cuccia per cani", "cuccie", "url" , "40") ;
+
+
+$mieiProdotti = new Prodotto("cuccia per cani", "cuccie", "url" , "40",) ;
 
 
 var_dump($mieiProdotti);

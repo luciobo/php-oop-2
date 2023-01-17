@@ -1,13 +1,13 @@
 <?php
+require_once __DIR__ . "/Categoria.php";
 
+class Prodotto {
+    protected $nomeProdotto;
+    protected $categoriaProdotto;
+    protected $immagini;
+    protected $prezzo;
 
-class Prodotti {
-    private $nomeProdotto;
-    private $categoriaProdotto;
-    private $immagini;
-    private $prezzo;
-
-function __construct($_nomeProdotto, $_categoriaProdotto, $_immagini, $_prezzo ) {
+function __construct($_nomeProdotto, $_categoriaProdotto, $_immagini, $_prezzo,) {
 
         $this->setNomeProdotto($_nomeProdotto);
         $this->setCategoriaProdotto($_categoriaProdotto);
