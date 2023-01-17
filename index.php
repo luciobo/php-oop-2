@@ -10,8 +10,10 @@ $CategoriaCane = new Categoria("Gatto", "fa-dog" );
 var_dump($CategoriaGatto, $CategoriaCane);
 
 
-$mieiProdotti = new Prodotto("cuccia per cani", "cuccie", "url" , "40", $CategoriaGatto) ;
-var_dump($mieiProdotti);
+$CucciaPerGatto = new Prodotto("cuccia per cani", $CategoriaGatto, "url" , "40", "400" ) ;
+var_dump($CucciaPerGatto);
+
+
 
 ?>
 
