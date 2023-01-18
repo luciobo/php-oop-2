@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . "/Prodotto.php";
-// require_once __DIR__ . "/Categoria.php";
+require_once __DIR__ . "/Categoria.php";
 
 
 
@@ -8,11 +8,12 @@ class Cibo extends Prodotto {
     protected $calorie;
     protected $ingredienti = [];
 
-    function __construct($_nomeProdotto, Categoria $_categoriaProdotto, $_immagini, $_prezzo, $_calorie) {
+    function __construct($_nomeProdotto, Categoria $_categoriaProdotto, $_immagini, $_prezzo, $_calorie, $_ingredienti) {
         // Invoco il costruttore della classe padre
         parent::__construct($_nomeProdotto, $_categoriaProdotto, $_immagini, $_prezzo);
     
         $this->setCalorie($_calorie);
+        $this->setIngredienti($_ingredienti);
     }
 
 
